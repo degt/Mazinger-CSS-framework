@@ -1,0 +1,14 @@
+.container{
+	width: 100%;
+}
+@for $i from 1 through 5 {
+	.col#{$i}{
+		@include columns($i, 10);
+		@media #{$iphone}{
+			@include columns(1, 10);
+		}
+		@media #{$iphone-landscape}{
+			@include columns(1, 10);
+		}
+	}
+}

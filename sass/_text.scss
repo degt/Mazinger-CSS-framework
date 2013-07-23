@@ -1,0 +1,29 @@
+body{
+	font-size: $font-size;
+}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{
+	margin: 10px 0;
+}
+.align-right{
+	text-align: right;
+}
+.align-left{
+	text-align: left;
+}
+.align-center{
+	text-align: center;
+}
+.align-justify{
+	text-align: justify;
+}
+.hyphen{
+	-webkit-hyphens: auto;
+	-moz--hyphens: auto;
+	hyphens: auto;
+}
