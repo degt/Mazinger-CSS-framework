@@ -338,7 +338,8 @@ textarea {
       column-gap: 10; } }
 
 body {
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Arial", sans-serif; }
 
 p {
   margin: 10px 0; }
