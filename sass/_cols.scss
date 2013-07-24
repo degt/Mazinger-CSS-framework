@@ -1,5 +1,5 @@
 .container{
-	width: 100%;
+	margin: 0 20px;
 }
 @for $i from 1 through 5 {
 	.col#{$i}{
@@ -9,6 +9,21 @@
 		}
 		@media #{$iphone-landscape}{
 			@include columns(1, 10);
+		}
+	}
+}
+.rule-simple{
+	@include column-rule(3px, #ccc, dotted);
+	@include column-gap(40px);
+}
+
+@for $i from 1 through 12{
+	.span#{$i}{
+		float: left;
+		width: 90%/$i;
+		margin: 0 5%;
+		&:first-child{
+			margin-left: 0;
 		}
 	}
 }

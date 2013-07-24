@@ -134,6 +134,18 @@
     column-gap:           $gap;
 }
 
+@mixin column-rule($width: 3px, $color: #CCCCCC, $style: outset){
+  -moz-column-rule:     $width $style $color; /* Firefox */
+  -webkit-column-rule:  $width $style $color; /* Safari and Chrome */
+  column-rule:          $width $style $color;
+}
+
+@mixin column-gap($gap){
+  -webkit-column-gap:   $gap;
+  -moz-column-gap:      $gap;
+  column-gap:           $gap;
+}
+
 /* DOUBLE BORDERS */
 @mixin double-borders($colorOne: #3C3C3C, $colorTwo: #999999, $radius: 0) {
     border: 1px solid $colorOne;
