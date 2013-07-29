@@ -17,13 +17,26 @@
 	@include column-gap(40px);
 }
 
-@for $i from 1 through 12{
-	.span#{$i}{
-		float: left;
-		width: 90%/$i;
-		margin: 0 5%;
-		&:first-child{
-			margin-left: 0;
-		}
+//@for $i from 1 through 12{
+//	.span#{$i}{
+//		float: left;
+//		width: (100% * $i)/12;
+//		padding: 0 10px;
+//		&:first-child{
+//			margin-left: 0;
+//		}
+//	}
+//}
+
+[class*=span]{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+@for $i from 1 through 12 {
+	.span#{$i}  {
+		width: percentage(($i / 12)); 
 	}
 }

@@ -3,6 +3,12 @@
 // Adapted from http://github.com/necolas/normalize.css
 // --------------------------------------------------
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   padding: 0;
