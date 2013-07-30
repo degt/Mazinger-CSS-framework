@@ -5,9 +5,15 @@ body{
 }
 h1{
 	font-size: 4em;
+	font-family: $header-font;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 100%;
 }
 h2{
-	font-size: 3em;
+	font-size: 1.5em;
+	font-family: $subheader-font;
+	font-weight: 300;
 }
 h3{
 	font-size: 1.2em;
