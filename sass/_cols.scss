@@ -1,8 +1,14 @@
 .container{
 	margin: 0 20px;
+	@media #{$iphone}{
+		margin: 0;
+	}
 }
 @for $i from 1 through 5 {
 	.col#{$i}{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+
 		@include columns($i, 10);
 		@media #{$iphone}{
 			@include columns(1, 10);
@@ -10,6 +16,12 @@
 		@media #{$iphone-landscape}{
 			@include columns(1, 10);
 		}
+	}
+}
+[class^=col],
+[class*=col]{
+	ul:first-child{
+		margin-top: 0;
 	}
 }
 .rule-dotted{
@@ -42,5 +54,9 @@
 @for $i from 1 through 12 {
 	.span#{$i}  {
 		width: percentage(($i / 12)); 
+		@media #{$iphone}{
+			width: 100%;
+		}
 	}
+	
 }

@@ -5,6 +5,8 @@ h3,
 h4,
 h5,
 h6,
-[class*=span]{
+ul,
+[class*=span],
+[class*=col]{
 	outline:#f00 dotted 1px;
 }
