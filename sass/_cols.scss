@@ -12,8 +12,12 @@
 		}
 	}
 }
-.rule-simple{
+.rule-dotted{
 	@include column-rule(3px, #ccc, dotted);
+	@include column-gap(40px);
+}
+.rule-solid{
+	@include column-rule(3px, #ccc, solid);
 	@include column-gap(40px);
 }
 

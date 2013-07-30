@@ -348,12 +348,22 @@ textarea {
       -moz-column-gap: 10;
       column-gap: 10; } }
 
-.rule-simple {
+.rule-dotted {
   -moz-column-rule: 3px dotted #cccccc;
   /* Firefox */
   -webkit-column-rule: 3px dotted #cccccc;
   /* Safari and Chrome */
   column-rule: 3px dotted #cccccc;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px; }
+
+.rule-solid {
+  -moz-column-rule: 3px solid #cccccc;
+  /* Firefox */
+  -webkit-column-rule: 3px solid #cccccc;
+  /* Safari and Chrome */
+  column-rule: 3px solid #cccccc;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px; }
