@@ -1,0 +1,5 @@
+.page{
+	@media #{$ipad}{
+		width: 768px;
+	}
+}

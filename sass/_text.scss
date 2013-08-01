@@ -42,6 +42,7 @@ strong{
 hr{
 	border: none;
 	border-bottom: solid 1px #CCC;
+	margin: 20px 0;
 }
 a{
 	color: $main-color;
@@ -72,4 +73,21 @@ a{
 	margin-right: 0.2em;
 	box-sizing: inherit;
 	font-weight: bold;
+}
+
+//Text colors
+.color-red{
+	color: $color-red;
+}
+.color-blue{
+	color: $color-blue;
+}
+.color-dark-blue{
+	color: $color-dark-blue;
+}
+.color-orange{
+	color: $color-orange;
+}
+.color-white{
+	color: $color-white;
 }

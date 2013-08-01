@@ -1,5 +1,5 @@
 .container{
-	margin: 0 20px;
+	margin: 0;
 	@media #{$iphone}{
 		margin: 0;
 	}
@@ -20,7 +20,8 @@
 }
 [class^=col],
 [class*=col]{
-	ul:first-child{
+	ul:first-child,
+	p:first-child{
 		margin-top: 0;
 	}
 }
@@ -33,17 +34,8 @@
 	@include column-gap(40px);
 }
 
-//@for $i from 1 through 12{
-//	.span#{$i}{
-//		float: left;
-//		width: (100% * $i)/12;
-//		padding: 0 10px;
-//		&:first-child{
-//			margin-left: 0;
-//		}
-//	}
-//}
 
+[class^=span],
 [class*=span]{
 	position: relative;
 	min-height: 1px;
