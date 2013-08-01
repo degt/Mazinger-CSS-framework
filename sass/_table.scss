@@ -1,0 +1,19 @@
+table.table{
+	width: 100%;
+	thead{
+		th{
+			background-color: #eee;
+			border: none;
+		}
+	}
+	tfoot{
+		td{	
+			background-color: #eee;
+			border: none;
+		}
+	}
+	td{
+		border: none;
+		border-bottom: solid 1px #ccc;
+	}
+}
