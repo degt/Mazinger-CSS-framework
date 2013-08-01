@@ -226,7 +226,7 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 .container {
-  margin: 0 20px; }
+  margin: 0; }
   @media only screen and (max-width: 320px) {
     .container {
       margin: 0; } }
@@ -362,7 +362,9 @@ textarea {
       column-gap: 10; } }
 
 [class^=col] ul:first-child,
-[class*=col] ul:first-child {
+[class^=col] p:first-child,
+[class*=col] ul:first-child,
+[class*=col] p:first-child {
   margin-top: 0; }
 
 .rule-dotted {
@@ -385,6 +387,7 @@ textarea {
   -moz-column-gap: 40px;
   column-gap: 40px; }
 
+[class^=span],
 [class*=span] {
   position: relative;
   min-height: 1px;
@@ -504,7 +507,8 @@ strong {
 
 hr {
   border: none;
-  border-bottom: solid 1px #CCC; }
+  border-bottom: solid 1px #CCC;
+  margin: 20px 0; }
 
 a {
   color: red; }
@@ -536,6 +540,21 @@ a {
   box-sizing: inherit;
   font-weight: bold; }
 
+.color-red {
+  color: red; }
+
+.color-blue {
+  color: #00aaff; }
+
+.color-dark-blue {
+  color: #004466; }
+
+.color-orange {
+  color: orange; }
+
+.color-white {
+  color: white; }
+
 img {
   max-width: 100%;
   width: 100%; }
@@ -550,3 +569,19 @@ figure {
     font-style: italic;
     margin-top: 10px;
     text-align: center; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .page {
+    width: 768px; } }
+
+table.table {
+  width: 100%; }
+  table.table thead th {
+    background-color: #eee;
+    border: none; }
+  table.table tfoot td {
+    background-color: #eee;
+    border: none; }
+  table.table td {
+    border: none;
+    border-bottom: solid 1px #ccc; }
